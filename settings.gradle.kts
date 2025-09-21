@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Compose Exercises"
+rootProject.name = "fintrack"
 include(":app")

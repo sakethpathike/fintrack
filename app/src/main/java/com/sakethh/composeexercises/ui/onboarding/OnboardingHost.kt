@@ -24,7 +24,6 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Clear
-import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -54,6 +53,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sakethh.composeexercises.ui.common.PrimaryButton
+import com.sakethh.composeexercises.ui.theme.Colors
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -228,21 +229,6 @@ fun OnboardingHost(modifier: Modifier = Modifier) {
     }
 }
 
-@Composable
-fun PrimaryButton(text: String, onClick: () -> Unit) {
-    Button(
-        shape = RoundedCornerShape(25.dp),
-        colors = defaultButtonColors(),
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(ButtonDefaults.MinHeight + 10.dp),
-        onClick = onClick
-    ) {
-        Text(
-            text = text, style = MaterialTheme.typography.titleSmall, color = Color(0xFFFAFAFA)
-        )
-    }
-}
 
 // keeps the system nav bar transparent while still applying padding on top, end, and bottom when working with Scaffold(s);
 // kinda a hacky workaround, but there doesn't seem to be clear documentation on how to handle this properly
@@ -257,5 +243,5 @@ fun Modifier.addEdgeToEdgeScaffoldPadding(paddingValues: PaddingValues) = this
 
 @Composable
 fun defaultButtonColors(): ButtonColors {
-    return ButtonDefaults.buttonColors().copy(containerColor = Color(0XFF008080))
+    return ButtonDefaults.buttonColors().copy(containerColor = Colors.Primary)
 }

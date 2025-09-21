@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Compose Exercises</string>
+    <string name="fintrack_label">Fintrack</string>
+    <string name="gs_welcome_message">Welcome to %1$s!\nLet\'s get you set up.</string>
+    <string name="gs_setup_a_pin_label">Set up a pin</string>
+    <string name="gs_setup_a_pin_desc">Enhance your account security.</string>
+    <string name="gs_link_bank_accounts_label">Link your bank accounts.</string>
+    <string name="gs_link_bank_accounts_desc">Link your bank accounts to start tracking your expenses.</string>
+    <string name="gs_savings_label">Create a savings goal</string>
+    <string name="gs_savings_label_desc">What are your financial goals?</string>
+    <string name="ps_create_passcode_label">Create your passcode</string>
+    <string name="ps_create_passcode_desc">For a more secure and convenient way to view your account, create a 4-digit passcode now.</string>
+    <string name="skip_btn_text">Skip for now</string>
+    <string name="create_pin_btn_text">Create a Pin</string>
 </resources>
